@@ -5,6 +5,7 @@ app = FastAPI()
 
 # Modelo de datos para el pedido
 class Pedido(BaseModel):
+    id: int
     cliente: str
     total: float
     estado_pedido: str
